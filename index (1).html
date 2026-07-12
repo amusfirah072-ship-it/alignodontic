@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Alignodontic Clear Aligners — Premium invisible aligners by Centre of Orthodontics, Lahore. Book your consultation with Dr. Ali Raza Jafri via Oladoc.">
+<meta property="og:title" content="Alignodontic Clear Aligners | Premium Invisible Aligners Lahore">
+<meta property="og:description" content="Transform your smile with Alignodontic Clear Aligners. Expert orthodontic supervision by Dr. Ali Raza Jafri.">
+<title>Alignodontic Clear Aligners | by Centre of Orthodontics</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --b1:#0a1628;--b2:#0f2044;--b3:#1a3a7a;--bl:#4d84f5;--bll:#8ab4f8;
+  --g1:#a0731a;--g2:#d4a83f;--g3:#f0cc6e;
+  --bg:#05080f;--card:#0c1525;--card2:#111e38;
+  --t1:#f0f4ff;--t2:#8fa0c0;--t3:#445070;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--bg);color:var(--t1);font-family:var(--sans);overflow-x:hidden}
+
+nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(5,8,15,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(212,168,63,0.15)}
+.logo{font-family:var(--serif);font-size:20px;font-weight:600;background:linear-gradient(90deg,var(--g3),var(--bl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.18em;color:var(--t3);-webkit-text-fill-color:var(--t3);font-weight:500;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--t2);text-decoration:none;font-size:13px;font-weight:400;transition:color .2s}
+.nav-links a:hover{color:var(--g3)}
+.nbtn{background:linear-gradient(135deg,var(--b3),var(--bl));color:#fff;padding:10px 22px;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 0 22px rgba(77,132,245,.4);transition:all .25s;white-space:nowrap}
+.nbtn:hover{transform:translateY(-1px);box-shadow:0 0 36px rgba(77,132,245,.65)}
+
+#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:90px 24px}
+.hbg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(85px);opacity:.35}
+.o1{width:650px;height:650px;background:radial-gradient(circle,rgba(26,58,122,.85),transparent 70%);top:-200px;left:50%;transform:translateX(-50%);animation:fa 9s ease-in-out infinite}
+.o2{width:420px;height:420px;background:radial-gradient(circle,rgba(212,168,63,.5),transparent 70%);bottom:0;right:-80px;animation:fb 11s ease-in-out infinite}
+.o3{width:320px;height:320px;background:radial-gradient(circle,rgba(77,132,245,.38),transparent 70%);top:35%;left:-70px;animation:fc 8s ease-in-out infinite}
+@keyframes fa{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-35px)}}
+@keyframes fb{0%,100%{transform:translateY(0)}50%{transform:translateY(-28px)}}
+@keyframes fc{0%,100%{transform:translateY(0)}50%{transform:translateY(22px)}}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(77,132,245,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(77,132,245,.04) 1px,transparent 1px);background-size:55px 55px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,black,transparent);mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,black,transparent)}
+
+.scene{width:260px;height:165px;margin:0 auto 48px;perspective:900px}
+.aligner{width:100%;height:100%;transform-style:preserve-3d;animation:spin3d 14s linear infinite;position:relative}
+@keyframes spin3d{from{transform:rotateY(0deg) rotateX(10deg)}to{transform:rotateY(360deg) rotateX(10deg)}}
+.a-ring{position:absolute;left:50%;top:50%;transform-style:preserve-3d;border-radius:50%}
+.r1{width:220px;height:88px;margin-left:-110px;margin-top:-44px;border:2.5px solid rgba(77,132,245,.78);box-shadow:0 0 30px rgba(77,132,245,.45),inset 0 0 20px rgba(77,132,245,.1);transform:translateZ(20px)}
+.r2{width:207px;height:83px;margin-left:-103.5px;margin-top:-41.5px;border:1.5px solid rgba(212,168,63,.48);box-shadow:0 0 22px rgba(212,168,63,.28);transform:translateZ(-20px)}
+.r3{width:214px;height:85px;margin-left:-107px;margin-top:-42.5px;border:1px solid rgba(255,255,255,.12);transform:translateZ(0) rotateX(88deg) scaleY(.35)}
+.a-shine{position:absolute;top:18px;left:44px;width:66px;height:24px;background:linear-gradient(135deg,rgba(255,255,255,.4),transparent);border-radius:50%;transform:rotate(-18deg) translateZ(22px)}
+.glow-r{position:absolute;inset:-35px;background:radial-gradient(circle,rgba(26,58,122,.22),transparent 70%);border-radius:50%;animation:gp 3.2s ease-in-out infinite}
+@keyframes gp{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.12);opacity:1}}
+
+.ptcl{position:absolute;border-radius:50%;opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{opacity:0;transform:translateY(0)}20%{opacity:.65}80%{opacity:.2}100%{opacity:0;transform:translateY(-210px)}}
+
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;background:linear-gradient(90deg,var(--g3),var(--bl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:18px}
+h1.hero-h1{font-family:var(--serif);font-size:clamp(44px,7vw,86px);line-height:1.05;letter-spacing:-.03em;margin-bottom:22px;font-weight:600}
+h1.hero-h1 em{font-style:italic;background:linear-gradient(135deg,var(--g3),var(--bll));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hsub{font-size:18px;color:var(--t2);font-weight:300;max-width:510px;margin:0 auto 16px;line-height:1.72}
+.fee-badge{display:inline-block;background:rgba(212,168,63,.1);border:1px solid rgba(212,168,63,.3);color:var(--g3);font-size:13px;padding:7px 20px;border-radius:50px;margin-bottom:38px;font-weight:500}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-b{background:linear-gradient(135deg,var(--b2),var(--b3),var(--bl));color:#fff;padding:16px 36px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;box-shadow:0 0 30px rgba(77,132,245,.45);transition:all .3s;display:inline-block}
+.btn-b:hover{transform:translateY(-2px);box-shadow:0 0 48px rgba(77,132,245,.65)}
+.btn-g{background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));color:#160e00;padding:16px 36px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 0 30px rgba(212,168,63,.4);transition:all .3s;display:inline-block}
+.btn-g:hover{transform:translateY(-2px);box-shadow:0 0 48px rgba(212,168,63,.6)}
+.scroll-ind{margin-top:58px;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--t3);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.sline{width:1px;height:50px;background:linear-gradient(to bottom,var(--g2),transparent);animation:sd 2s ease-in-out infinite}
+@keyframes sd{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(77,132,245,.09);border-radius:20px;overflow:hidden;margin:60px auto;max-width:1080px}
+.sblock{background:var(--bg);padding:34px 20px;text-align:center;transition:background .3s}
+.sblock:hover{background:rgba(26,58,122,.1)}
+.snum{font-family:var(--serif);font-size:46px;font-weight:600;background:linear-gradient(135deg,var(--g3),var(--bl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:8px}
+.slbl{font-size:12px;color:var(--t3);letter-spacing:.04em}
+
+.sec{padding:92px 40px}
+.ctr{max-width:1080px;margin:0 auto}
+.ey{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--g3);margin-bottom:14px;font-weight:600}
+h2.sh{font-family:var(--serif);font-size:clamp(32px,4.5vw,52px);line-height:1.12;letter-spacing:-.02em;margin-bottom:18px;font-weight:500}
+.sub{font-size:16px;color:var(--t2);max-width:500px;line-height:1.75;font-weight:300}
+.divider{width:56px;height:2px;background:linear-gradient(90deg,var(--g2),var(--bl));border-radius:2px;margin:22px 0}
+.ctr-divider{margin:22px auto}
+
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:56px}
+.wcard{background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid rgba(77,132,245,.1);border-radius:20px;padding:30px;position:relative;overflow:hidden;transition:transform .4s,border-color .4s,box-shadow .4s;cursor:default}
+.wcard:hover{transform:translateY(-5px) rotateX(3deg);border-color:rgba(212,168,63,.3);box-shadow:0 22px 55px rgba(0,0,0,.5),0 0 26px rgba(26,58,122,.2)}
+.wcard::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,168,63,.04),transparent);opacity:0;transition:opacity .3s}
+.wcard:hover::after{opacity:1}
+.wicon{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px}
+.wicon.b{background:rgba(26,58,122,.2);color:var(--bl)}
+.wicon.g{background:rgba(212,168,63,.15);color:var(--g3)}
+.wn{font-family:var(--serif);font-size:48px;color:rgba(212,168,63,.1);position:absolute;top:18px;right:22px;line-height:1;font-weight:600}
+.wcard h3{font-size:18px;font-weight:600;margin-bottom:9px}
+.wcard p{font-size:13px;color:var(--t2);line-height:1.7}
+
+.tl{position:relative;padding:56px 0}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--bl),var(--g2),transparent);transform:translateX(-50%)}
+.ts{display:grid;grid-template-columns:1fr 56px 1fr;margin-bottom:46px;align-items:center}
+.tdot{grid-column:2;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--bl));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;margin:0 auto;z-index:1;position:relative;box-shadow:0 0 20px rgba(77,132,245,.5);flex-shrink:0}
+.tc{background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid rgba(77,132,245,.1);border-radius:16px;padding:24px 28px;transition:all .3s}
+.tc:hover{border-color:rgba(212,168,63,.3);transform:scale(1.02)}
+.tc h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.tc p{font-size:13px;color:var(--t2);line-height:1.6}
+
+.igrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;margin-top:56px}
+.icard{background:rgba(77,132,245,.04);border:1px solid rgba(77,132,245,.1);border-radius:16px;padding:22px;display:flex;gap:14px;align-items:flex-start;transition:all .3s}
+.icard:hover{background:rgba(212,168,63,.05);border-color:rgba(212,168,63,.22);transform:translateX(5px)}
+.ichk{width:30px;height:30px;min-width:30px;border-radius:50%;background:rgba(26,58,122,.22);display:flex;align-items:center;justify-content:center;color:var(--bl);font-size:15px;margin-top:2px}
+.icard h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.icard p{font-size:13px;color:var(--t2);line-height:1.6}
+
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:rgba(77,132,245,.08);border-radius:22px;overflow:hidden;margin-top:56px}
+.cblock{background:var(--bg);padding:40px;transition:background .3s}
+.cblock:hover{background:linear-gradient(135deg,rgba(26,58,122,.09),var(--bg))}
+.cnum{font-family:var(--serif);font-size:68px;color:rgba(212,168,63,.1);line-height:1;margin-bottom:14px;font-weight:600}
+.cblock h3{font-size:19px;font-weight:600;margin-bottom:10px}
+.cblock p{font-size:13px;color:var(--t2);line-height:1.7}
+
+.jwrap{overflow-x:auto;padding:56px 0;scrollbar-width:none;-ms-overflow-style:none}
+.jwrap::-webkit-scrollbar{display:none}
+.jtrack{display:flex;min-width:max-content;padding:0 40px}
+.jstep{width:210px;flex-shrink:0;text-align:center;position:relative;padding:36px 18px}
+.jstep::before{content:'';position:absolute;top:26px;left:50%;right:-50%;height:1px;background:linear-gradient(90deg,var(--bl),rgba(77,132,245,.1));z-index:0}
+.jstep:last-child::before{display:none}
+.jc{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--bl));margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:18px;position:relative;z-index:1;box-shadow:0 0 22px rgba(26,58,122,.5)}
+.jstep h4{font-size:13px;font-weight:600;margin-bottom:6px}
+.jstep p{font-size:11px;color:var(--t3);line-height:1.5}
+
+.wa-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.phone{background:linear-gradient(135deg,#0c1a2e,#091226);border-radius:40px;padding:8px;box-shadow:0 40px 80px rgba(0,0,0,.58),0 0 55px rgba(26,58,122,.14);max-width:295px;margin:0 auto}
+.screen{background:#08111e;border-radius:34px;overflow:hidden;min-height:470px;display:flex;flex-direction:column}
+.wh{background:#112030;padding:15px 18px;display:flex;align-items:center;gap:10px}
+.wav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#25d366,#128c7e);display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;flex-shrink:0}
+.wn2{font-size:14px;font-weight:600;color:#e9edef}
+.ws2{font-size:11px;color:#8696a0}
+.wm{flex:1;padding:14px;display:flex;flex-direction:column;gap:9px;background:#060d15;overflow-y:auto}
+.wb{max-width:85%;padding:9px 13px;border-radius:11px;font-size:12px;line-height:1.55;animation:bi .4s ease both}
+@keyframes bi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.wb.r{background:#112030;color:#e9edef;border-radius:3px 11px 11px 11px;align-self:flex-start}
+.wb.s{background:#0a3d2e;color:#e9edef;border-radius:11px 3px 11px 11px;align-self:flex-end}
+.wtyping{background:#112030;padding:9px 13px;border-radius:3px 11px 11px 11px;align-self:flex-start;display:flex;gap:4px;align-items:center}
+.dp{width:6px;height:6px;border-radius:50%;background:#8696a0;animation:dp 1.4s ease-in-out infinite}
+.dp:nth-child(2){animation-delay:.2s}.dp:nth-child(3){animation-delay:.4s}
+@keyframes dp{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+.wa-btn{background:linear-gradient(135deg,#128c7e,#25d366);color:#fff;padding:15px 34px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:9px;box-shadow:0 0 26px rgba(37,211,102,.32);transition:all .3s}
+.wa-btn:hover{transform:translateY(-2px);box-shadow:0 0 44px rgba(37,211,102,.52)}
+
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:22px;margin-top:56px}
+.tcard{background:linear-gradient(135deg,var(--card),rgba(17,28,56,.8));border:1px solid rgba(212,168,63,.12);border-radius:22px;padding:38px;position:relative;overflow:hidden;transition:all .4s}
+.tcard::before{content:'"';font-family:var(--serif);font-size:120px;color:rgba(212,168,63,.07);position:absolute;top:-10px;left:18px;line-height:1}
+.tcard:hover{border-color:rgba(212,168,63,.3);transform:translateY(-5px);box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.stars{display:flex;gap:3px;margin-bottom:18px}
+.star{color:var(--g3);font-size:18px}
+.tcard blockquote{font-family:var(--serif);font-size:15px;font-style:italic;line-height:1.8;margin-bottom:22px;color:var(--t1);font-weight:400}
+.tname{font-size:13px;font-weight:600;color:var(--bl)}
+.trole{font-size:11px;color:var(--t3);margin-top:2px}
+
+.faq{max-width:750px;margin:56px auto 0;display:flex;flex-direction:column;gap:11px}
+.fitem{background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid rgba(77,132,245,.1);border-radius:15px;overflow:hidden;transition:border-color .3s}
+.fitem.open{border-color:rgba(212,168,63,.3)}
+.fq{padding:20px 26px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;user-select:none}
+.fn{font-family:var(--serif);font-size:15px;color:rgba(212,168,63,.4);min-width:26px}
+.ft{font-size:14px;font-weight:500;flex:1}
+.fi{width:26px;height:26px;border-radius:50%;background:rgba(26,58,122,.18);display:flex;align-items:center;justify-content:center;color:var(--bl);font-size:17px;transition:transform .3s;flex-shrink:0;line-height:1}
+.fitem.open .fi{transform:rotate(45deg);background:var(--g2);color:#160e00}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.fitem.open .fa{max-height:200px;padding:0 26px 22px 52px}
+.fa p{font-size:13px;color:var(--t2);line-height:1.75}
+
+#cta{text-align:center;position:relative;overflow:hidden;padding:115px 40px;background:linear-gradient(180deg,var(--bg),#080d1a)}
+.ctabg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 50%,rgba(26,58,122,.14),transparent)}
+.smile-svg{position:absolute;bottom:0;left:50%;transform:translateX(-50%);pointer-events:none}
+.spath{fill:none;stroke:rgba(212,168,63,.2);stroke-width:2;stroke-dasharray:1200;stroke-dashoffset:1200;animation:da 2.2s ease forwards .5s}
+@keyframes da{to{stroke-dashoffset:0}}
+.cta-fee{display:inline-block;background:rgba(212,168,63,.09);border:1px solid rgba(212,168,63,.25);color:var(--g3);font-size:13px;padding:7px 20px;border-radius:50px;margin-bottom:38px;font-weight:500}
+
+footer{background:var(--bg);border-top:1px solid rgba(77,132,245,.1);padding:58px 40px 38px}
+.finner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+.fbrand{font-family:var(--serif);font-size:21px;font-weight:600;background:linear-gradient(90deg,var(--g3),var(--bl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ftag{font-size:12px;color:var(--t3);margin:4px 0 2px}
+.fby{font-size:10px;color:rgba(212,168,63,.5);letter-spacing:.1em;text-transform:uppercase}
+.fcontact{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.fci{font-size:13px;color:var(--t2)}
+.fh{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);margin-bottom:18px;font-weight:600}
+.flinks{display:flex;flex-direction:column;gap:12px}
+.flinks a{color:var(--t2);text-decoration:none;font-size:13px;transition:color .2s}
+.flinks a:hover{color:var(--g3)}
+.fsoc{display:flex;gap:10px;margin-top:6px}
+.sb{width:38px;height:38px;border-radius:10px;background:rgba(77,132,245,.06);border:1px solid rgba(77,132,245,.12);display:flex;align-items:center;justify-content:center;color:var(--t2);text-decoration:none;font-size:14px;transition:all .2s;cursor:pointer}
+.sb:hover{background:rgba(212,168,63,.1);border-color:rgba(212,168,63,.28);color:var(--g3);transform:translateY(-2px)}
+.fbot{max-width:1080px;margin:36px auto 0;padding-top:22px;border-top:1px solid rgba(77,132,245,.07);display:flex;justify-content:space-between;font-size:11px;color:var(--t3)}
+
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.22s}.d3{transition-delay:.33s}
+
+@media(max-width:768px){
+  nav{padding:14px 20px}
+  .nav-links{display:none}
+  .sec{padding:70px 20px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wa-wrap{grid-template-columns:1fr}
+  .finner{grid-template-columns:1fr;gap:32px}
+  .fbot{flex-direction:column;gap:8px;text-align:center}
+  .tgrid{grid-template-columns:1fr}
+  .cgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">ALIGNODONTIC CLEAR ALIGNERS<small>by Centre of Orthodontics</small></div>
+  <ul class="nav-links">
+    <li><a href="#why">Why Aligners</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#incl">Included</a></li>
+    <li><a href="#rev">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="https://oladoc.com/pakistan/lahore/dr/dentist/ali-raza-jafri/1224" target="_blank" class="nbtn">Book on Oladoc ↗</a>
+</nav>
+
+<section id="hero">
+  <div class="hbg">
+    <div class="grid-bg"></div>
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    <div id="pts"></div>
+  </div>
+  <div class="scene">
+    <div class="aligner">
+      <div class="glow-r"></div>
+      <div class="a-ring r3"></div>
+      <div class="a-ring r2"></div>
+      <div class="a-ring r1"><div class="a-shine"></div></div>
+    </div>
+  </div>
+  <p class="eyebrow rv">Alignodontic Clear Aligners</p>
+  <h1 class="hero-h1 rv d1">Your <em>Invisible</em><br>Smile Transformation</h1>
+  <p class="hsub rv d2">Premium clear aligners designed for comfort, confidence and precision — crafted to fit seamlessly into your life.</p>
+  <p class="fee-badge rv d2">✦ Consultation fee: PKR 1,500 · Booked via Oladoc</p>
+  <div class="btns rv d3">
+    <a href="https://oladoc.com/pakistan/lahore/dr/dentist/ali-raza-jafri/1224" target="_blank" class="btn-b">Book Consultation on Oladoc ↗</a>
+    <a href="https://wa.me/923477067777" target="_blank" class="btn-g">💬 Ask on WhatsApp</a>
+  </div>
+  <div class="scroll-ind rv d3"><span>Discover</span><div class="sline"></div></div>
+</section>
+
+<div style="padding:0 40px">
+  <div class="stats rv">
+    <div class="sblock"><div class="snum" data-t="98" data-sfx="%">0%</div><div class="slbl">Patient Satisfaction</div></div>
+    <div class="sblock"><div class="snum" data-t="500" data-sfx="+">0+</div><div class="slbl">Smiles Transformed</div></div>
+    <div class="sblock"><div class="snum" data-t="18" data-sfx=" mo">0 mo</div><div class="slbl">Average Treatment</div></div>
+    <div class="sblock"><div class="snum">∞</div><div class="slbl">Refinements Included</div></div>
+  </div>
+</div>
+
+<section id="why" class="sec">
+  <div class="ctr">
+    <div class="rv"><p class="ey">Why clear aligners</p><h2 class="sh">Freedom to smile,<br>your way</h2><div class="divider"></div><p class="sub">No wires. No brackets. No compromises. Just a clear, comfortable path to the smile you've always imagined.</p></div>
+    <div class="wgrid">
+      <div class="wcard rv"><span class="wn">01</span><div class="wicon b">◎</div><h3>Nearly Invisible</h3><p>Crystal-clear aligners nobody notices — except you, every time you see yourself smile confidently.</p></div>
+      <div class="wcard rv d1"><span class="wn">02</span><div class="wicon g">✦</div><h3>Remarkably Comfortable</h3><p>Smooth, custom-fitted with no sharp edges. Most patients forget they're even wearing them.</p></div>
+      <div class="wcard rv d2"><span class="wn">03</span><div class="wicon b">◈</div><h3>Fully Removable</h3><p>Take them out for meals, photos, occasions. Your life runs on your schedule, not your treatment.</p></div>
+      <div class="wcard rv"><span class="wn">04</span><div class="wicon g">◉</div><h3>Eat Freely</h3><p>Zero food restrictions. Remove, enjoy anything you love, rinse and replace. Simple as that.</p></div>
+      <div class="wcard rv d1"><span class="wn">05</span><div class="wicon b">❋</div><h3>Easy to Clean</h3><p>Rinse and brush with a soft toothbrush. No special tools or complicated routines ever.</p></div>
+      <div class="wcard rv d2"><span class="wn">06</span><div class="wicon g">◐</div><h3>Predictable Results</h3><p>Digital planning shows your final smile before you begin. No guesswork, just results.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="sec" style="background:linear-gradient(180deg,#080e1c,var(--bg))">
+  <div class="ctr">
+    <div class="rv" style="text-align:center">
+      <p class="ey">The process</p>
+      <h2 class="sh" style="text-align:center">Six steps to your<br><em style="font-style:italic;background:linear-gradient(135deg,var(--g3),var(--bll));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">perfect smile</em></h2>
+      <div class="divider ctr-divider"></div>
+    </div>
+    <div class="tl">
+      <div class="ts rv"><div class="tc" style="grid-column:1;text-align:right"><h3>Smile Assessment</h3><p>A thorough consultation to understand your goals and design your ideal outcome.</p></div><div class="tdot">1</div><div style="grid-column:3"></div></div>
+      <div class="ts rv"><div style="grid-column:1"></div><div class="tdot">2</div><div class="tc" style="grid-column:3"><h3>Digital Scan</h3><p>State-of-the-art 3D scanning — no messy impressions, just precision data.</p></div></div>
+      <div class="ts rv"><div class="tc" style="grid-column:1;text-align:right"><h3>Treatment Planning</h3><p>Your complete journey mapped digitally. See your final smile before starting.</p></div><div class="tdot">3</div><div style="grid-column:3"></div></div>
+      <div class="ts rv"><div style="grid-column:1"></div><div class="tdot">4</div><div class="tc" style="grid-column:3"><h3>Receive Your Aligners</h3><p>Custom-manufactured to exact precision and delivered directly to you.</p></div></div>
+      <div class="ts rv"><div class="tc" style="grid-column:1;text-align:right"><h3>Track Progress</h3><p>Regular check-ins, WhatsApp support and unlimited adjustments keep you on track.</p></div><div class="tdot">5</div><div style="grid-column:3"></div></div>
+      <div class="ts rv"><div style="grid-column:1"></div><div class="tdot" style="background:linear-gradient(135deg,var(--g1),var(--g3));box-shadow:0 0 20px rgba(212,168,63,.5);color:#160e00">✦</div><div class="tc" style="grid-column:3;border-color:rgba(212,168,63,.3)"><h3 style="color:var(--g3)">Your Confident Smile</h3><p>The moment you've worked toward. Protected with your included retainers.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="incl" class="sec" style="background:linear-gradient(180deg,var(--bg),#080e1c,var(--bg))">
+  <div class="ctr">
+    <div class="rv"><p class="ey">Complete care package</p><h2 class="sh">Everything included,<br>nothing hidden</h2><div class="divider"></div><p class="sub">Your Alignodontic package is complete from first scan to final retainer — no surprise costs.</p></div>
+    <div class="igrid">
+      <div class="icard rv"><div class="ichk">✓</div><div><h4>Orthodontist Case Supervision</h4><p>Every step supervised by Dr. Ali Raza Jafri, our specialist orthodontist.</p></div></div>
+      <div class="icard rv d1"><div class="ichk">✓</div><div><h4>Direct WhatsApp Communication</h4><p>Message our team and Dr. Jafri directly, at any stage of treatment.</p></div></div>
+      <div class="icard rv d2"><div class="ichk">✓</div><div><h4>Free Workshops & Resources</h4><p>Online workshops and educational materials to support your journey.</p></div></div>
+      <div class="icard rv"><div class="ichk">✓</div><div><h4>Unlimited Refinements & Scans</h4><p>Adjustments needed? Unlimited refinement scans are fully included.</p></div></div>
+      <div class="icard rv d1"><div class="ichk">✓</div><div><h4>Attachment & IPR Support</h4><p>Expert guidance for attachments and interproximal reduction as needed.</p></div></div>
+      <div class="icard rv d2"><div class="ichk">✓</div><div><h4>Pre & Post Treatment Photos</h4><p>Professional documentation of your transformation from day one.</p></div></div>
+      <div class="icard rv" style="grid-column:1/-1;max-width:560px;background:linear-gradient(135deg,rgba(212,168,63,.07),rgba(212,168,63,.02));border-color:rgba(212,168,63,.22)"><div class="ichk" style="background:rgba(212,168,63,.18);color:var(--g3)">✓</div><div><h4>Two Sets of Retainers</h4><p>Two pairs of custom retainers included to keep your smile perfect for life.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#060a14">
+  <div class="ctr">
+    <div class="rv" style="text-align:center"><p class="ey">Why Alignodontic</p><h2 class="sh" style="text-align:center">Precision you can trust.<br>Support you can feel.</h2><div class="divider ctr-divider"></div></div>
+    <div class="cgrid">
+      <div class="cblock rv"><div class="cnum">01</div><h3>Precision Technology</h3><p>Sub-millimetre accuracy from your 3D digital scan. Every movement is controlled and intentional.</p></div>
+      <div class="cblock rv d1"><div class="cnum">02</div><h3>Expert Supervision</h3><p>Dr. Ali Raza Jafri personally reviews your plan and monitors every stage of your progress.</p></div>
+      <div class="cblock rv d2"><div class="cnum">03</div><h3>Designed for Comfort</h3><p>Smooth edges, perfect fit, pressure-calibrated movements — engineered to feel completely natural.</p></div>
+      <div class="cblock rv"><div class="cnum">04</div><h3>Continuous Support</h3><p>Our WhatsApp line connects you to our team and orthodontist at every stage, any time.</p></div>
+      <div class="cblock rv d1"><div class="cnum">05</div><h3>Digital Planning</h3><p>See your future smile in 3D before treatment begins. Complete clarity from day one.</p></div>
+      <div class="cblock rv d2"><div class="cnum">06</div><h3>After-Sales Excellence</h3><p>Unlimited refinements, post-treatment retainers — our commitment continues after treatment ends.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--bg)">
+  <div class="ctr"><div class="rv" style="text-align:center"><p class="ey">Your journey</p><h2 class="sh" style="text-align:center">Every step,<br>beautifully guided</h2><div class="divider ctr-divider"></div></div></div>
+  <div class="jwrap rv">
+    <div class="jtrack">
+      <div class="jstep"><div class="jc">✉</div><h4>First Enquiry</h4><p>Reach out — we respond within hours</p></div>
+      <div class="jstep"><div class="jc">◎</div><h4>Digital Scan</h4><p>Fast, comfortable 3D scanning session</p></div>
+      <div class="jstep"><div class="jc">◐</div><h4>Custom Planning</h4><p>Your personal smile roadmap is created</p></div>
+      <div class="jstep"><div class="jc">◈</div><h4>Receive Aligners</h4><p>Precision-crafted, delivered to you</p></div>
+      <div class="jstep"><div class="jc">↺</div><h4>Monthly Progress</h4><p>Check-ins and WhatsApp support</p></div>
+      <div class="jstep"><div class="jc" style="background:linear-gradient(135deg,var(--g1),var(--g3));box-shadow:0 0 22px rgba(212,168,63,.42);color:#160e00">✦</div><h4>Beautiful Smile</h4><p>The moment you've been waiting for</p></div>
+      <div class="jstep"><div class="jc" style="background:linear-gradient(135deg,#2a0a7e,#5a32e0);box-shadow:0 0 22px rgba(90,50,224,.4)">◉</div><h4>Retainers</h4><p>Protect your smile for a lifetime</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:linear-gradient(135deg,#070f1a,#05080f)">
+  <div class="ctr">
+    <div class="wa-wrap">
+      <div class="rv">
+        <p class="ey">Direct support</p>
+        <h2 class="sh">Your orthodontist,<br>one message away</h2>
+        <div class="divider"></div>
+        <p class="sub" style="margin-bottom:30px">No waiting rooms. No call queues. Direct access to our team and Dr. Ali Raza Jafri — whenever you need it, wherever you are.</p>
+        <a href="https://wa.me/923477067777" target="_blank" class="wa-btn">💬 Open WhatsApp</a>
+      </div>
+      <div class="rv d2">
+        <div class="phone">
+          <div class="screen">
+            <div class="wh"><div class="wav">A</div><div><div class="wn2">Alignodontic</div><div class="ws2">Online · Dr. Ali Raza Jafri</div></div></div>
+            <div class="wm" id="wm"><div class="wtyping" id="wt" style="display:none"><div class="dp"></div><div class="dp"></div><div class="dp"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rev" class="sec" style="background:linear-gradient(180deg,var(--bg),#080d1a)">
+  <div class="ctr">
+    <div class="rv" style="text-align:center"><p class="ey">Patient reviews</p><h2 class="sh" style="text-align:center">Real smiles,<br>real stories</h2><div class="divider ctr-divider"></div></div>
+    <div class="tgrid">
+      <div class="tcard rv">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>It's the best centre for orthodontic learning and especially aligners manufacturing by them is better than anyone. I have used aligners for 8 years and both my patients' satisfaction and my own satisfaction are with them. What truly sets them apart is their after-sales support, which no one can match. Much recommended.</blockquote>
+        <div class="tname">Ali Altaf</div><div class="trole">Local Guide · Verified Patient</div>
+      </div>
+      <div class="tcard rv d2">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>10/10 recommend! Has been such a seamless process. Customer service is top notch! From the very first consultation to receiving my aligners, everything was handled with such professionalism and care.</blockquote>
+        <div class="tname">Brittany Williams</div><div class="trole">Verified Patient</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sec" style="background:#060a14">
+  <div class="ctr">
+    <div class="rv" style="text-align:center"><p class="ey">Common questions</p><h2 class="sh" style="text-align:center">Everything you<br>need to know</h2><div class="divider ctr-divider"></div></div>
+    <div class="faq">
+      <div class="fitem rv" onclick="tf(this)"><div class="fq"><span class="fn">01</span><span class="ft">What are clear aligners?</span><span class="fi">+</span></div><div class="fa"><p>Clear aligners are custom-made, removable, virtually invisible trays that gently shift your teeth into their ideal position — smooth, comfortable, and designed for modern life.</p></div></div>
+      <div class="fitem rv d1" onclick="tf(this)"><div class="fq"><span class="fn">02</span><span class="ft">How long does treatment take?</span><span class="fi">+</span></div><div class="fa"><p>Most treatments take 6–18 months depending on complexity. Your consultation provides a precise timeline from your personalised digital plan.</p></div></div>
+      <div class="fitem rv d2" onclick="tf(this)"><div class="fq"><span class="fn">03</span><span class="ft">Can I eat while wearing aligners?</span><span class="fi">+</span></div><div class="fa"><p>Remove aligners before all meals. Eat whatever you like with zero restrictions, then brush, rinse and reinsert. It's that simple.</p></div></div>
+      <div class="fitem rv" onclick="tf(this)"><div class="fq"><span class="fn">04</span><span class="ft">How should I clean my aligners?</span><span class="fi">+</span></div><div class="fa"><p>Rinse with lukewarm water and gently brush with a soft toothbrush after meals. Avoid hot water or coloured soaps to protect the material.</p></div></div>
+      <div class="fitem rv d1" onclick="tf(this)"><div class="fq"><span class="fn">05</span><span class="ft">Will aligners affect my speech?</span><span class="fi">+</span></div><div class="fa"><p>A very minor adjustment of 1–3 days is typical. Any slight lisp disappears quickly as your tongue naturally adapts to the ultra-thin trays.</p></div></div>
+      <div class="fitem rv d2" onclick="tf(this)"><div class="fq"><span class="fn">06</span><span class="ft">How many hours should I wear them?</span><span class="fi">+</span></div><div class="fa"><p>20–22 hours per day for best results. Remove only for eating, drinking (except water) and brushing. Consistency is everything.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="ctabg"></div>
+  <div class="smile-svg"><svg width="580" height="290" viewBox="0 0 580 290"><path class="spath" d="M 55 75 Q 290 270 525 75"/></svg></div>
+  <div class="ctr rv" style="position:relative">
+    <p class="ey">Start your journey</p>
+    <h2 class="sh" style="text-align:center;margin-bottom:14px">Ready to Transform<br><em style="font-style:italic;background:linear-gradient(135deg,var(--g3),var(--bll));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Your Smile?</em></h2>
+    <p class="sub" style="margin:0 auto 14px;text-align:center">Your confidence is waiting. Let's begin together.</p>
+    <p class="cta-fee">✦ Consultation: PKR 1,500 · Booked via Oladoc</p>
+    <div class="btns">
+      <a href="https://oladoc.com/pakistan/lahore/dr/dentist/ali-raza-jafri/1224" target="_blank" class="btn-b">Book on Oladoc ↗</a>
+      <a href="https://wa.me/923477067777" target="_blank" class="wa-btn">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="finner">
+    <div>
+      <div class="fbrand">ALIGNODONTIC</div>
+      <div class="ftag">Clear Aligners</div>
+      <div class="fby">by Centre of Orthodontics</div>
+      <div class="fcontact">
+        <div class="fci">📞 <a href="tel:+923477067777" style="color:inherit;text-decoration:none">0347 7067777</a></div>
+        <div class="fci">📍 6/B1 Block B1 PGECHS, Lahore</div>
+        <div class="fci">🌐 <a href="https://oladoc.com/pakistan/lahore/dr/dentist/ali-raza-jafri/1224" target="_blank" style="color:var(--bl);text-decoration:none">Book on Oladoc</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="fh">Navigate</div>
+      <div class="flinks">
+        <a href="#why">Why Aligners</a>
+        <a href="#how">How It Works</a>
+        <a href="#incl">What's Included</a>
+        <a href="#rev">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+    <div>
+      <div class="fh">Connect</div>
+      <div class="fsoc">
+        <a href="https://wa.me/923477067777" target="_blank" class="sb" title="WhatsApp">💬</a>
+        <a href="https://facebook.com" target="_blank" class="sb" title="Facebook">f</a>
+        <a href="https://youtube.com" target="_blank" class="sb" title="YouTube">▶</a>
+        <a href="https://maps.google.com/?q=6/B1+Block+B1+PGECHS+Lahore" target="_blank" class="sb" title="Google Maps">📍</a>
+      </div>
+      <div style="margin-top:24px"><a href="https://oladoc.com/pakistan/lahore/dr/dentist/ali-raza-jafri/1224" target="_blank" class="btn-b" style="font-size:13px;padding:11px 22px">Book Now ↗</a></div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2025 Alignodontic Clear Aligners. All rights reserved.</span>
+    <span>by Centre of Orthodontics · Lahore, Pakistan</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Particles
+  const pts=document.getElementById('pts');
+  if(pts){
+    for(let i=0;i<24;i++){
+      const p=document.createElement('div');
+      p.className='ptcl';
+      const isGold=Math.random()>.5;
+      p.style.cssText=`position:absolute;border-radius:50%;background:${isGold?'#d4a83f':'#4d84f5'};width:${1+Math.random()*2.5}px;height:${1+Math.random()*2.5}px;left:${Math.random()*100}%;top:${55+Math.random()*45}%;animation-duration:${3+Math.random()*5}s;animation-delay:${Math.random()*7}s`;
+      pts.appendChild(p);
+    }
+  }
+
+  // Scroll reveal
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        e.target.querySelectorAll('[data-t]').forEach(el=>{
+          const t=parseInt(el.dataset.t);
+          const sfx=el.dataset.sfx||'';
+          let v=0,step=t/55;
+          const tick=()=>{v+=step;if(v<t){el.textContent=Math.round(v)+sfx;requestAnimationFrame(tick)}else{el.textContent=t+sfx}};
+          requestAnimationFrame(tick);
+        });
+      }
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+  // FAQ
+  window.tf=function(el){
+    const open=el.classList.contains('open');
+    document.querySelectorAll('.fitem').forEach(f=>f.classList.remove('open'));
+    if(!open)el.classList.add('open');
+  };
+
+  // WhatsApp chat
+  const msgs=[
+    {t:'r',m:'This is the Customer Relationship Office from Alignodontic Clear Aligners.',d:1000},
+    {t:'r',m:'We are glad to be here in contact with you.',d:2500},
+    {t:'r',m:'This platform allows direct communication with our consultant orthodontist Dr. Ali Raza Jafri.',d:4200},
+    {t:'r',m:'Feel free to ask questions regarding your aligner treatment at any stage.',d:6000},
+    {t:'s',m:'What is the consultation fee?',d:7500},
+    {t:'r',m:'Consultation is PKR 1,500. Book directly via our Oladoc page.',d:9200},
+  ];
+  const wm=document.getElementById('wm');
+  const wtyp=document.getElementById('wt');
+  if(wm&&wtyp){
+    msgs.forEach(msg=>{
+      setTimeout(()=>{
+        if(msg.t==='r'){wtyp.style.display='flex';wm.appendChild(wtyp)}
+        setTimeout(()=>{
+          wtyp.style.display='none';
+          const b=document.createElement('div');
+          b.className='wb '+(msg.t==='r'?'r':'s');
+          b.textContent=msg.m;
+          wm.insertBefore(b,wtyp);
+          wm.scrollTop=wm.scrollHeight;
+        },msg.t==='r'?900:100);
+      },msg.d);
+    });
+  }
+})();
+</script>
+</body>
+</html>
